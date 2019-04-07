@@ -6,7 +6,7 @@ module.exports = async function(context, req) {
   if (req.query.format && req.query.format === "string") {
     if (req.query.locale) {
       context.log.info(
-        `outputting a string in a format of ${req.query.locale}`
+        `outputting a string in a format of "${req.query.locale}"`
       );
       context.res = {
         body: `${datetime.toLocaleString(req.query.locale)}`
