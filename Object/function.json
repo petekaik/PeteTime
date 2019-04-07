@@ -5,10 +5,8 @@
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
-      "methods": [
-        "get"
-      ],
-      "route": "time"
+      "methods": ["get"],
+      "route": "object"
     },
     {
       "type": "http",
