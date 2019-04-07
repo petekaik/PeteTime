@@ -9,7 +9,7 @@ module.exports = async function(context, req) {
         `outputting a string in a format of "${req.query.locale}"`
       );
       context.res = {
-        body: `${datetime.toLocaleDateString(req.query.locale)}`
+        body: `${datetime.toLocaleTimeString(req.query.locale)}`
       };
     } else {
       context.log.info("outputting a string");
